@@ -1,1 +1,55 @@
-/* Add styles here */
+:root {
+  --background-color: #f0f0f0;
+  --container-background: #ffffff;
+  --primary-color: #4a90e2;
+  --primary-hover-color: #357abd;
+  --text-color: #333333;
+  --ball-text-color: #ffffff;
+  --ball-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: var(--container-background);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+.lotto-numbers-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.generate-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: var(--primary-hover-color);
+}
