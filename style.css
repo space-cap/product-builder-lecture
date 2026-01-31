@@ -64,6 +64,22 @@ h1 {
   background-color: var(--primary-hover-color);
 }
 
+.contact-link {
+  position: fixed; /* Position the link relative to the viewport */
+  top: 20px;
+  right: 20px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  z-index: 1000; /* Ensure the link is on top of other elements */
+}
+
+.contact-link:hover {
+  color: var(--primary-hover-color);
+  text-decoration: underline;
+}
+
 /* Theme Switch Styles */
 .theme-switch-wrapper {
   display: flex;
@@ -117,7 +133,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Contact Form Styles */
+/* Contact Form Styles (for contact.html) */
 .contact-form-container {
   margin-top: 40px;
   max-width: 500px;
@@ -177,4 +193,3 @@ input:checked + .slider:before {
 .contact-form .submit-button:hover {
   background-color: var(--primary-hover-color);
 }
-
